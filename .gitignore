@@ -1,0 +1,9 @@
+# This is to ignore private keys
+id_ed25519
+*.key
+
+# xIgnore large test files or actual data
+*.pdf
+*.zip
+!User_Manual.pdf  # Exceptions for required deliverables
+!Report.pdf
