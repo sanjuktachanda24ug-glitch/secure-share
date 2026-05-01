@@ -1,9 +1,14 @@
-# This is to ignore private keys
+# Ignore the actual private keys
 id_ed25519
 *.key
 
-# xIgnore large test files or actual data
-*.pdf
-*.zip
-!User_Manual.pdf  # Exceptions for required deliverables
+# It should ignore any local test files that aren't scripts
+notes.txt
+*.age
+*.sha256
+
+# Do NOT ignore the documentation you need to submit
+!README.md
+!User_Manual.pdf
 !Report.pdf
+
