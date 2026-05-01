@@ -1,5 +1,5 @@
 # Ignore the actual private keys
-id_ed25519
+id_ed25519.pub
 *.key
 
 # It should ignore any local test files that aren't scripts
