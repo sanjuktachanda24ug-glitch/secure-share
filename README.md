@@ -93,3 +93,18 @@ The `.gitignore` file is configured to exclude the private key (`id_ed25519`) an
 **Sender:**
 Sender: [SUCCESS] Checksum generated | [SUCCESS] File encrypted | Transfer complete.
 Receiver: Decryption successful | RESULT: SUCCESS! Hashes match. Data is authentic
+
+---
+
+## Final Integrity Check
+
+Hash can be created using the following command:
+**command:**
+sha256sum notes.txt > notes.txt.sha256
+
+And then verified using
+sha256sum -c notes.txt.sha256
+
+If the outcome is
+OK - file is identical to original
+FAILED - file has been tampered with 
