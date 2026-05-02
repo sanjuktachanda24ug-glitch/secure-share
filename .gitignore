@@ -7,7 +7,7 @@ notes.txt
 *.age
 *.sha256
 
-# Do NOT ignore the documentation you need to submit
+# Do NOT ignore the documentation needed to submit
 !README.md
 !User_Manual.pdf
 !Report.pdf
