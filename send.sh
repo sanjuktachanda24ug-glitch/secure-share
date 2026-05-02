@@ -18,7 +18,10 @@ echo "[2/4] Encrypting file with age..."
 age -R <(echo "$PUB_KEY") -o "$FILE.age" "$FILE"
 
 echo "[3/4] Transferring files locally..."
+
 # We just copy to a different folder or the home directory
+# could not use the scp function because of authentication issues on this SSH machine, and used cp instead
+# 'if scp "$FILE.age" "$FILE.sha256" "$USER@$IP:~/"; then' was the original line
 if cp "$FILE.age" "$FILE.sha256" "$HOME/"; then
     STATUS="SUCCESS"
     echo "Local transfer complete."
